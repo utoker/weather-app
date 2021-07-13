@@ -16,10 +16,20 @@ body {
   height: 500px;
   width: 500px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .txt-city {
   width: 100px;
   height: 24px;
+}
+.div-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

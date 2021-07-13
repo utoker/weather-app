@@ -9,8 +9,10 @@ export default async function getWeather() {
     );
     let weather = await response.json();
     document.querySelector(".spn-name").textContent = weather.name;
-    document.querySelector(".spn-temp").textContent = weather.main.temp;
-    document.querySelector(".spn-feels").textContent = weather.main.feels_like;
+    document.querySelector(".spn-temp").textContent = `Tempeture:${weather.main.temp}`;
+    document.querySelector(".spn-feels").textContent = `Feels like:${weather.main.feels_like}`;
+    document.querySelector(".spn-desc").textContent = weather.weather[0].description;
+    console.log(weather);
   } catch (e) {
     console.log(e);
   }
